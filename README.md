@@ -50,4 +50,27 @@ For DC Sweep Analysis, the symbolic solution is obtained from OP Analysis and th
 
 Finally, The AC Analysis is similar to DC Sweep except that there is no need to run Newton Method for every sweeped frequency, instead the Newton method is applied once so that the ac-model of the diode which is just $G_{eq}$ is obtained and then linearized circuit is sweeped with frequency.
 
+![Running Program](https://i.postimg.cc/PxCbtdh8/Animation.gif)
+
+To verify the Solution, The following circuit is simulated using both LTSPICE and our SPICE v1.0. The results are perfectly matched.
+
+VD 1 0 AC 1
+
+R1 1 2 1e3
+
+C1 2 3 100e-3
+
+L1 3 4 10e-3
+
+C2 4 0 100e-3
+
+D1 4 0 1mA_diode
+
+* diode model statement
+
+.model 1mA_diode D (Is=100pA n=1.679)
+
+![Running Program](https://i.postimg.cc/TYLj8dQ8/SOL.jpg)
+
+
 
