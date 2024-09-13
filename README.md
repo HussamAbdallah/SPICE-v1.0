@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://i.postimg.cc/7LqSLRKZ/main-workflow.png" alt="Main Flow" width="400"/>
 </p>
-First the netlist in the program directory is parsed into a map where keys represents the symbols like "C1" for caps the value of each element in the map is a vector holding cap nodes and capacitance value. Then the system matricies are formulated according to each element stamp in the modified nodal analysis approach.
+First the netlist in the program directory is parsed into a map where keys represent the symbols like "C1" for caps the value of each element in the map is a vector holding cap nodes and capacitance value. Then the system matricies are formulated according to each element stamp in the modified nodal analysis approach.
 
 
 The following flowchart represents how OP Analysis is conducted.
