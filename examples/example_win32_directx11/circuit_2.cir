@@ -1,5 +1,8 @@
 Empty walls
 
-VD 1 0  1
+VD 1 0 1
 R1 1 2 1e3
-D1 2 0 0
+C1 2 3 100e-3
+L1 3 4 10e-3
+C2 4 0 100e-3
+D1 4 0 1mA_diode
